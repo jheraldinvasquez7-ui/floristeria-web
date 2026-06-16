@@ -33,7 +33,7 @@
         <section class="seccion sobre-lulu" id="sobre-lulu">
             <div class="seccion__contenedor sobre-lulu__contenedor">
                 <div class="sobre-lulu__imagen">
-                    <img src="./img/Captura de pantalla 2026-06-02 102128.png">
+                    <img src="./img/Captura de pantalla 2026-06-02 102128.png" alt="Lulú">
                 </div>
                 <div class="sobre-lulu__texto">
                     <h2 class="seccion__titulo sobre-lulu__titulo">Yo soy Lulú</h2>
@@ -171,7 +171,7 @@
                 <div class="eventos__grid">
                     <div class="evento-card">
                         <div class="evento-card__imagen">
-                            <img src="./img/boda.png">
+                            <img src="./img/boda.png" alt="Boda">
                         </div>
                         <div class="evento-card__info">
                             <h3 class="evento-card__nombre">Matrimonios</h3>
@@ -181,7 +181,7 @@
 
                     <div class="evento-card">
                         <div class="evento-card__imagen">
-                            <img src="./img/quinceaños.png">
+                            <img src="./img/quinceaños.png" alt="Quince Años">
                         </div>
                         <div class="evento-card__info">
                             <h3 class="evento-card__nombre">Quince Años</h3>
@@ -191,7 +191,7 @@
 
                     <div class="evento-card">
                         <div class="evento-card__imagen">
-                            <img src="./img/empresa.png">
+                            <img src="./img/empresa.png" alt="Corporativos">
                         </div>
                         <div class="evento-card__info">
                             <h3 class="evento-card__nombre">Corporativos</h3>
@@ -227,56 +227,111 @@
                         <img src="./img/galeria5.png" alt="Arreglo floral 5" loading="lazy">
                     </figure>
                     <figure class="galeria__item">
-                        <img src="./img/imagen3.jpeg">
+                        <img src="./img/imagen3.jpeg" alt="Arreglo floral 6">
                     </figure>
                 </div>
             </div>
         </section>
 
-    <!-- ========== VIDEOS ========== -->
-
-        <section class="seccion" id="videos">
+        <!-- ========== VIDEOS - REDISEÑADO ESTILO BOUTIQUE ========== -->
+        <section class="seccion videos" id="videos">
             <div class="seccion__contenedor">
                 <h2 class="seccion__titulo">Detrás de los arreglos</h2>
                 <p class="seccion__descripcion">El arte floral en movimiento. Disfruta de nuestros procesos creativos.</p>
-                <div class="videos__cuadricula">
+                
+                <div class="videos__grid">
+                    <!-- Video 1 -->
                     <div class="video-card">
-                        <video class="video-card__reproductor" controls><source src="./videos/entrega.mp4" type="video/mp4"></video>
+                        <div class="video-card__contenedor">
+                            <video class="video-card__reproductor" controls>
+                                <source src="./videos/entrega.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-card__overlay">
+                                <span class="video-card__icono">▶</span>
+                            </div>
+                        </div>
+                        <div class="video-card__info">
+                            <h3 class="video-card__nombre">Entrega Especial</h3>
+                            <p class="video-card__descripcion">El momento de entregar un arreglo único.</p>
+                        </div>
                     </div>
+
+                    <!-- Video 2 -->
                     <div class="video-card">
-                        <video class="video-card__reproductor" controls><source src="./videos/primer beso.mp4" type="video/mp4"></video>
+                        <div class="video-card__contenedor">
+                            <video class="video-card__reproductor" controls>
+                                <source src="./videos/primer beso.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-card__overlay">
+                                <span class="video-card__icono">▶</span>
+                            </div>
+                        </div>
+                        <div class="video-card__info">
+                            <h3 class="video-card__nombre">Primer Beso</h3>
+                            <p class="video-card__descripcion">Creando el arreglo más romántico.</p>
+                        </div>
                     </div>
+
+                    <!-- Video 3 -->
                     <div class="video-card">
-                        <video class="video-card__reproductor" controls><source src="./videos/Video Cinematográfico Floristería.mp4" type="video/mp4"></video>
+                        <div class="video-card__contenedor">
+                            <video class="video-card__reproductor" controls>
+                                <source src="./videos/Video Cinematográfico Floristería.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-card__overlay">
+                                <span class="video-card__icono">▶</span>
+                            </div>
+                        </div>
+                        <div class="video-card__info">
+                            <h3 class="video-card__nombre">Cinematografía Floral</h3>
+                            <p class="video-card__descripcion">Un recorrido visual por nuestro taller.</p>
+                        </div>
                     </div>
+
+                    <!-- Video 4 -->
                     <div class="video-card">
-                        <video class="video-card__reproductor" controls><source src="./videos/video1.mp4" type="video/mp4"></video>
+                        <div class="video-card__contenedor">
+                            <video class="video-card__reproductor" controls>
+                                <source src="./videos/video1.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-card__overlay">
+                                <span class="video-card__icono">▶</span>
+                            </div>
+                        </div>
+                        <div class="video-card__info">
+                            <h3 class="video-card__nombre">Inspiración Diaria</h3>
+                            <p class="video-card__descripcion">La magia de crear con flores frescas.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        
     <footer class="footer">
         <p>&copy; 2026 Jardín de Lulú - Flores que cuentan historias</p>
     </footer>
 
     <style>
-     
+       
 
 :root {
     --color-texto: #3B3B3B;
     --color-salvia: #A7B29D;
+    --color-salvia-oscuro: #8A9A7E;
     --color-fondo-claro: #F4F1EC;
     --color-fondo-rosado: #ead6cf;
     --color-texto-claro: #6B6B6B;
     --color-blanco: #FFFFFF;
+    --color-dorado: #C4A882;
     
     --fuente-titulos: 'Playfair Display', Georgia, 'Times New Roman', serif;
     --fuente-texto: 'Lato', 'Helvetica Neue', Arial, sans-serif;
     
-    --borde-radius: 12px;
+    --borde-radius: 16px;
     --sombra-suave: 0 8px 30px rgba(0, 0, 0, 0.05);
-    --sombra-media: 0 12px 40px rgba(0, 0, 0, 0.08);
-    --transicion: 0.25s ease-in-out;
+    --sombra-media: 0 12px 40px rgba(0, 0, 0, 0.10);
+    --sombra-fuerte: 0 20px 60px rgba(0, 0, 0, 0.12);
+    --transicion: 0.3s ease-in-out;
 }
 
 * {
@@ -520,7 +575,7 @@ img {
     color: var(--color-salvia);
 }
 
-/* ========== EVENTOS - MÁS ALARGADAS ========== */
+/* ========== EVENTOS ========== */
 .eventos {
     background-color: var(--color-fondo-rosado);
 }
@@ -562,11 +617,6 @@ img {
 
 .evento-card__info {
     padding: 28px;
-}
-
-.evento-card__icono {
-    font-size: 42px;
-    margin-bottom: 12px;
 }
 
 .evento-card__nombre {
@@ -617,47 +667,116 @@ img {
     transform: scale(1.05);
 }
 
-/* ========== VIDEOS ========== */
+/* ============================================================
+   ========== VIDEOS - REDISEÑADO ESTILO BOUTIQUE ==========
+   ============================================================ */
 .videos {
     background-color: var(--color-fondo-rosado);
+    padding: 80px 32px;
 }
 
 .videos__grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 32px;
 }
 
 .video-card {
     background-color: var(--color-blanco);
     border-radius: var(--borde-radius);
-    padding: 16px;
+    overflow: hidden;
     box-shadow: var(--sombra-suave);
-    transition: transform var(--transicion);
+    transition: all var(--transicion);
 }
 
 .video-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--sombra-media);
+    transform: translateY(-8px);
+    box-shadow: var(--sombra-fuerte);
 }
 
-.video-card__titulo {
-    font-family: var(--fuente-titulos);
-    font-size: 18px;
-    margin-bottom: 12px;
+.video-card__contenedor {
+    position: relative;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    cursor: pointer;
 }
 
 .video-card__reproductor {
     width: 100%;
-    border-radius: 8px;
-    background-color: #000;
     height: 280px;
+    display: block;
+    background-color: #0a0a0a;
+    object-fit: cover;
 }
 
-.video-card__nota {
-    font-size: 12px;
+/* Overlay con botón de reproducción */
+.video-card__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.video-card__contenedor:hover .video-card__overlay {
+    opacity: 1;
+}
+
+.video-card__icono {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--color-salvia-oscuro);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.video-card__contenedor:hover .video-card__icono {
+    transform: scale(1.1);
+    background: #ffffff;
+}
+
+.video-card__info {
+    padding: 20px 24px 24px;
+}
+
+.video-card__nombre {
+    font-family: var(--fuente-titulos);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-texto);
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+}
+
+.video-card__descripcion {
+    font-size: 14px;
     color: var(--color-texto-claro);
-    margin-top: 8px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* Pequeño detalle decorativo */
+.video-card__info::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: var(--color-dorado);
+    margin-top: 12px;
+    border-radius: 2px;
 }
 
 /* ========== FOOTER ========== */
@@ -724,9 +843,14 @@ img {
         height: 360px;
     }
     
+    /* VIDEOS - Tablet: 2 columnas */
     .videos__grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
+    }
+
+    .video-card__reproductor {
+        height: 240px;
     }
 }
 
@@ -759,9 +883,18 @@ img {
     
     .catalogo__grid,
     .eventos__grid,
-    .galeria__grid,
+    .galeria__grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* VIDEOS - Móvil: 1 columna */
     .videos__grid {
         grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .video-card__reproductor {
+        height: 220px;
     }
     
     .card-producto__imagen {
@@ -794,10 +927,6 @@ img {
     
     .galeria__item img {
         height: 400px;
-    }
-    
-    .video-card__reproductor {
-        height: 220px;
     }
 }
     </style>
