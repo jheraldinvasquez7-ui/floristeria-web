@@ -2,336 +2,454 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jardín de Lulú — Catálogo | Eventos | Galería | Videos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Jardín de Lulú — Flores que cuentan historias</title>
 
+    <!-- Fuentes: solo 2 familias tipográficas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos2.css">
 </head>
 <body>
 
-    <header class="header">
-        <div class="header__contenedor">
-            <a href="#" class="header__logo">Jardín de Lulú</a>
+    <header class="encabezado">
+        <div class="encabezado__contenedor">
+            <div class="encabezado__logo">
+                Jardín de Lulú
+                <span>flores que cuentan historias</span>
+            </div>
             <nav>
-                <ul class="header__menu">
-                    <li><a href="#sobre-lulu" class="header__link">Sobre Lulú</a></li>
-                    <li><a href="#catalogo" class="header__link">Catálogo</a></li>
-                    <li><a href="#eventos" class="header__link">Eventos</a></li>
-                    <li><a href="#galeria" class="header__link">Galería</a></li>
-                    <li><a href="#videos" class="header__link">Videos</a></li>
+                <ul class="encabezado__menu">
+                    <li><a href="#inicio" class="encabezado__enlace">Inicio</a></li>
+                    <li><a href="#sobre-lulu" class="encabezado__enlace">Sobre Lulú</a></li>
+                    <li><a href="#catalogo" class="encabezado__enlace">Catálogo</a></li>
+                    <li><a href="#suscripciones" class="encabezado__enlace">Suscripciones</a></li>
+                    <li><a href="#servicios" class="encabezado__enlace">Servicios</a></li>
+                    <li><a href="#pedido" class="encabezado__enlace">Pedido</a></li>
+                    <li><a href="#contacto" class="encabezado__enlace">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
+        <!-- ========== HERO ========== -->
+        <section class="hero" id="inicio">
+            <div class="hero__contenedor">
+                <div class="hero__banner">Jardín de Lulú</div>
+                <h1 class="hero__eslogan">Flores que cuentan historias</h1>
+                <p class="hero__frase">"No vendo flores, vendo emociones. El primer 'te amo', la disculpa sincera, el abrazo que no diste a tiempo."</p>
+                <div class="hero__botones">
+                    <a href="#pedido" class="btn btn--primario">Pedir un arreglo</a>
+                    <a href="#suscripciones" class="btn btn--secundario">Conoce nuestras suscripciones</a>
+                </div>
+            </div>
+        </section>
+
         <!-- ========== SOBRE LULÚ ========== -->
         <section class="seccion sobre-lulu" id="sobre-lulu">
             <div class="seccion__contenedor sobre-lulu__contenedor">
                 <div class="sobre-lulu__imagen">
-                    <img src="./img/Captura de pantalla 2026-06-02 102128.png" alt="Lulú">
+                    <img src="/img/lulu.png" alt="Lulú">
                 </div>
                 <div class="sobre-lulu__texto">
                     <h2 class="seccion__titulo sobre-lulu__titulo">Yo soy Lulú</h2>
-                    <p class="sobre-lulu__destacado">
-                        Detrás de cada pétalo hay una historia. Y detrás de Jardín de Lulú, está la mía.
-                    </p>
-                    <p>
-                        Me llamo <strong>Lourdes "Lulú" Mendoza</strong>. Hace doce años tomé un camino que
-                        cambió mi vida: estudié floristería en Bogotá, en la Escuela de Arte Floral
-                        de la Sabana. Allí descubrí que las flores no son solo adornos; son mensajes,
-                        son abrazos, son disculpas, son bienvenidas.
-                    </p>
-                    <p>
-                        Hoy, con más de una década de experiencia, he acompañado cientos de historias:
-                        bodas que florecieron, nacimientos que iluminaron hogares, despedidas que
-                        necesitaron belleza para sanar.
-                    </p>
-                    <p class="sobre-lulu__sueno">
-                        Mi sueño es tener un cultivo propio donde cada flor crezca con el mismo cariño
-                        con el que diseño cada arreglo. Un jardín real que alimente este Jardín de Lulú.
-                    </p>
-                    <p class="sobre-lulu__firma">— Lulú </p>
+                    <p class="sobre-lulu__destacado">Detrás de cada pétalo hay una historia. Y detrás de Jardín de Lulú, está la mía.</p>
+                    <p>Me llamo <strong>Lourdes "Lulú" Mendoza</strong>. Hace doce años tomé un camino que cambió mi vida: estudié floristería en Bogotá, en la Escuela de Arte Floral de la Sabana. Allí descubrí que las flores no son solo adornos; son mensajes, son abrazos, son disculpas, son bienvenidas.</p>
+                    <p>Hoy, con más de una década de experiencia, he acompañado cientos de historias: bodas que florecieron, nacimientos que iluminaron hogares, despedidas que necesitaron belleza para sanar.</p>
+                    <p class="sobre-lulu__sueno">Mi sueño es tener un cultivo propio donde cada flor crezca con el mismo cariño con el que diseño cada arreglo. Un jardín real que alimente este Jardín de Lulú.</p>
+                    <p class="sobre-lulu__firma">— Lulú</p>
                 </div>
             </div>
         </section>
 
-        <!-- ========== CATÁLOGO ========== -->
-        <section class="seccion catalogo" id="catalogo">
+        <!-- ========== CATÁLOGO (8 productos) ========== -->
+        <section class="seccion" id="catalogo">
             <div class="seccion__contenedor">
                 <h2 class="seccion__titulo">Nuestro Catálogo</h2>
-                <p class="seccion__descripcion">
-                    Cada arreglo tiene nombre propio porque cada historia merece ser única.
-                </p>
+                <p class="seccion__descripcion">Cada arreglo tiene nombre propio porque cada historia merece ser única.</p>
+                <div class="catalogo__cuadricula">
+                    <div class="tarjeta">
+                        <div class="tarjeta__imagen">
+                            <img src="/img/rosas.png" alt="Primer Beso">
+                        </div>
+                        <div class="tarjeta__info">
+                            <h3 class="tarjeta__nombre">Primer Beso</h3>
+                            <p class="tarjeta__ocasion">Romance | Aniversario</p>
+                            <p class="tarjeta__descripcion">Rosas rojas y blancas. La dulzura del primer encuentro.</p>
+                            <p class="tarjeta__precio">$85.000</p>
+                        </div>
+                    </div>
 
-                <div class="catalogo__grid">
-                    <article class="card-producto">
-                        <div class="card-producto__imagen">
-                            <img src="./img/imagen1.jpeg" alt="Primer Beso" loading="lazy">
+                    <div class="tarjeta">
+                        <div class="tarjeta__imagen">
+                            <img src="/img/imagen2.png" alt="Mañana de Domingo">
                         </div>
-                        <div class="card-producto__info">
-                            <h3 class="card-producto__nombre">Primer Beso</h3>
-                            <p class="card-producto__descripcion">Rosas rosadas y eucalipto. La dulzura del primer encuentro.</p>
-                            <p class="card-producto__precio">$85.000</p>
+                        <div class="tarjeta__info">
+                            <h3 class="tarjeta__nombre">Mañana de Domingo</h3>
+                            <p class="tarjeta__ocasion">Alegría | Regalo</p>
+                            <p class="tarjeta__descripcion">Girasoles y margaritas. Calma y felicidad sin prisa.</p>
+                            <p class="tarjeta__precio">$65.000</p>
                         </div>
-                    </article>
+                    </div>
 
-                    <article class="card-producto">
-                        <div class="card-producto__imagen">
-                            <img src="./img/imagen2.png" alt="Mañana de Domingo" loading="lazy">
+                    <div class="tarjeta">
+                        <div class="tarjeta__imagen">
+                            <img src="/img/imagen3.jpeg" alt="Corazón Tranquilo">
                         </div>
-                        <div class="card-producto__info">
-                            <h3 class="card-producto__nombre">Mañana de Domingo</h3>
-                            <p class="card-producto__descripcion">Flores de campo, manzanilla y lavanda. Calma sin prisa.</p>
-                            <p class="card-producto__precio">$65.000</p>
+                        <div class="tarjeta__info">
+                            <h3 class="tarjeta__nombre">Corazón Tranquilo</h3>
+                            <p class="tarjeta__ocasion">Paz | Sanación</p>
+                            <p class="tarjeta__descripcion">Lirios blancos. Amor sereno y esperanza.</p>
+                            <p class="tarjeta__precio">$95.000</p>
                         </div>
-                    </article>
+                    </div>
 
-                    <article class="card-producto">
-                        <div class="card-producto__imagen">
-                            <img src="./img/imagen3.jpeg" alt="Corazón Tranquilo" loading="lazy">
+                    <div class="tarjeta">
+                        <div class="tarjeta__imagen">
+                            <img src="/img/imagen4.jpeg" alt="Fiesta de Cumpleaños">
                         </div>
-                        <div class="card-producto__info">
-                            <h3 class="card-producto__nombre">Corazón Tranquilo</h3>
-                            <p class="card-producto__descripcion">Peonías blancas y hojas de salvia. Amor sereno.</p>
-                            <p class="card-producto__precio">$95.000</p>
+                        <div class="tarjeta__info">
+                            <h3 class="tarjeta__nombre">Fiesta de Cumpleaños</h3>
+                            <p class="tarjeta__ocasion">Cumpleaños</p>
+                            <p class="tarjeta__descripcion">Mix colorido de flores de temporada.</p>
+                            <p class="tarjeta__precio">$75.000</p>
                         </div>
-                    </article>
+                    </div>
 
-                    <article class="card-producto">
-                        <div class="card-producto__imagen">
-                            <img src="./img/imagen4.jpeg" alt="Fiesta de Cumpleaños" loading="lazy">
+                    <div class="tarjeta">
+                        <div class="tarjeta__imagen">
+                            <img src="/img/imagen5.jpeg" alt="Disculpa Sincera">
                         </div>
-                        <div class="card-producto__info">
-                            <h3 class="card-producto__nombre">Fiesta de Cumpleaños</h3>
-                            <p class="card-producto__descripcion">Gerberas, astromelias y follaje tropical. Alegría total.</p>
-                            <p class="card-producto__precio">$75.000</p>
+                        <div class="tarjeta__info">
+                            <h3 class="tarjeta__nombre">Disculpa Sincera</h3>
+                            <p class="tarjeta__ocasion">Disculpa</p>
+                            <p class="tarjeta__descripcion">12 rosas rojas. Palabras que nacen del corazón.</p>
+                            <p class="tarjeta__precio">$110.000</p>
                         </div>
-                    </article>
+                    </div>
 
-                    <article class="card-producto">
-                        <div class="card-producto__imagen">
-                            <img src="./img/imagen5.jpeg" alt="Disculpa Sincera" loading="lazy">
+                    <div class="tarjeta">
+                        <div class="tarjeta__imagen">
+                            <img src="/img/imagen6.jpeg" alt="Bienvenido Bebé">
                         </div>
-                        <div class="card-producto__info">
-                            <h3 class="card-producto__nombre">Disculpa Sincera</h3>
-                            <p class="card-producto__descripcion">Rosas blancas y lilium oriental. Palabras que florecen.</p>
-                            <p class="card-producto__precio">$110.000</p>
+                        <div class="tarjeta__info">
+                            <h3 class="tarjeta__nombre">Bienvenido Bebé</h3>
+                            <p class="tarjeta__ocasion">Nacimiento</p>
+                            <p class="tarjeta__descripcion">Tonos pastel y ternura infinita.</p>
+                            <p class="tarjeta__precio">$90.000</p>
                         </div>
-                    </article>
+                    </div>
 
-                    <article class="card-producto">
-                        <div class="card-producto__imagen">
-                            <img src="./img/imagen6.jpeg" alt="Bienvenido Bebé" loading="lazy">
+                    <div class="tarjeta">
+                        <div class="tarjeta__imagen">
+                            <img src="/img/imagen7.jpeg" alt="Hasta Pronto">
                         </div>
-                        <div class="card-producto__info">
-                            <h3 class="card-producto__nombre">Bienvenido Bebé</h3>
-                            <p class="card-producto__descripcion">Tonos pastel, algodón natural y ternura infinita.</p>
-                            <p class="card-producto__precio">$90.000</p>
+                        <div class="tarjeta__info">
+                            <h3 class="tarjeta__nombre">Hasta Pronto</h3>
+                            <p class="tarjeta__ocasion">Funeral</p>
+                            <p class="tarjeta__descripcion">Lirios y crisantemos. Un adiós lleno de gratitud.</p>
+                            <p class="tarjeta__precio">$150.000</p>
                         </div>
-                    </article>
+                    </div>
 
-                    <article class="card-producto">
-                        <div class="card-producto__imagen">
-                            <img src="./img/imagen7.jpeg" alt="Hasta Pronto" loading="lazy">
+                    <div class="tarjeta">
+                        <div class="tarjeta__imagen">
+                            <img src="/img/imagen8.jpeg" alt="Aniversario">
                         </div>
-                        <div class="card-producto__info">
-                            <h3 class="card-producto__nombre">Hasta Pronto</h3>
-                            <p class="card-producto__descripcion">Lirios blancos y follaje noble. Despedida con gratitud.</p>
-                            <p class="card-producto__precio">$150.000</p>
+                        <div class="tarjeta__info">
+                            <h3 class="tarjeta__nombre">Aniversario</h3>
+                            <p class="tarjeta__ocasion">Aniversario</p>
+                            <p class="tarjeta__descripcion">Rosas rosadas y eucalipto. Amor que perdura.</p>
+                            <p class="tarjeta__precio">$120.000</p>
                         </div>
-                    </article>
-
-                    <article class="card-producto">
-                        <div class="card-producto__imagen">
-                            <img src="./img/imagen8.jpeg" alt="Aniversario" loading="lazy">
-                        </div>
-                        <div class="card-producto__info">
-                            <h3 class="card-producto__nombre">Aniversario</h3>
-                            <p class="card-producto__descripcion">Rosas rojas profundas y detalles en dorado.</p>
-                            <p class="card-producto__precio">$120.000</p>
-                        </div>
-                    </article>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- ========== EVENTOS ========== -->
-        <section class="seccion eventos" id="eventos">
+        <!-- ========== SUSCRIPCIONES ========== -->
+        <section class="seccion suscripciones" id="suscripciones">
             <div class="seccion__contenedor">
-                <h2 class="seccion__titulo">Eventos</h2>
-                <p class="seccion__descripcion">
-                    Convertimos espacios en experiencias florales inolvidables.
-                </p>
-
-                <div class="eventos__grid">
-                    <div class="evento-card">
-                        <div class="evento-card__imagen">
-                            <img src="./img/boda.png" alt="Boda">
-                        </div>
-                        <div class="evento-card__info">
-                            <h3 class="evento-card__nombre">Matrimonios</h3>
-                            <p class="evento-card__descripcion">Ramos de novia, centros de mesa, decoración de altar y pétalos para el día más importante.</p>
-                        </div>
+                <h2 class="seccion__titulo">Suscripciones Semanales</h2>
+                <p class="seccion__descripcion">Flores frescas cada semana en tu casa u oficina. El negocio más estable para nosotras, la mejor decisión para ti.</p>
+                <div class="suscripciones__cuadricula">
+                    <div class="plan">
+                        <h3 class="plan__nombre">Mini</h3>
+                        <p class="plan__precio">$80.000 <span>/mes</span></p>
+                        <p class="plan__descripcion">1 ramo pequeño por semana. Ideal para alegrar tu escritorio o mesita de noche.</p>
+                        <a href="#" class="btn--plan">Suscribirme</a>
                     </div>
 
-                    <div class="evento-card">
-                        <div class="evento-card__imagen">
-                            <img src="./img/quinceaños.png" alt="Quince Años">
-                        </div>
-                        <div class="evento-card__info">
-                            <h3 class="evento-card__nombre">Quince Años</h3>
-                            <p class="evento-card__descripcion">Arreglos que celebran la transición a la juventud con frescura y color.</p>
-                        </div>
+                    <div class="plan">
+                        <h3 class="plan__nombre">Clásico</h3>
+                        <p class="plan__precio">$150.000 <span>/mes</span></p>
+                        <p class="plan__descripcion">1 arreglo mediano por semana. Perfecto para tu sala o recibidor.</p>
+                        <a href="#" class="btn--plan">Suscribirme</a>
                     </div>
 
-                    <div class="evento-card">
-                        <div class="evento-card__imagen">
-                            <img src="./img/empresa.png" alt="Corporativos">
-                        </div>
-                        <div class="evento-card__info">
-                            <h3 class="evento-card__nombre">Corporativos</h3>
-                            <p class="evento-card__descripcion">Recepciones, lanzamientos y espacios que hablan el lenguaje de la elegancia.</p>
-                        </div>
+                    <div class="plan">
+                        <h3 class="plan__nombre">Empresarial</h3>
+                        <p class="plan__precio">$280.000 <span>/mes</span></p>
+                        <p class="plan__descripcion">3 arreglos para oficina. Causa una excelente impresión a tus clientes.</p>
+                        <a href="#" class="btn--plan">Suscribirme</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ========== GALERÍA ========== -->
-        <section class="seccion galeria" id="galeria">
+        <!-- ========== SERVICIOS PARA EVENTOS (tres tarjetas una al lado de la otra) ========== -->
+        <section class="seccion" id="servicios">
             <div class="seccion__contenedor">
-                <h2 class="seccion__titulo">Galería</h2>
-                <p class="seccion__descripcion">
-                    Instantes de nuestro trabajo. Cada imagen guarda una historia.
-                </p>
-
-                <div class="galeria__grid">
-                    <figure class="galeria__item">
-                        <img src="./img/galeria1.png" alt="Arreglo floral 1" loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                        <img src="./img/galeria2.png" alt="Arreglo floral 2" loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                        <img src="./img/galeria3.png" alt="Arreglo floral 3" loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                        <img src="./img/galeria4.png" alt="Arreglo floral 4" loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                        <img src="./img/galeria5.png" alt="Arreglo floral 5" loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                        <img src="./img/imagen3.jpeg" alt="Arreglo floral 6">
-                    </figure>
+                <h2 class="seccion__titulo">Servicios para Eventos</h2>
+                <p class="seccion__descripcion">Convertimos tus momentos especiales en recuerdos inolvidables con nuestra decoración floral.</p>
+                <div class="servicios__cuadricula">
+                    <div class="tarjeta-servicio">
+                        <div class="tarjeta-servicio__imagen">
+                            <img src="/img/boda.png" alt="Matrimonios">
+                        </div>
+                        <div class="tarjeta-servicio__info">
+                            <h3 class="tarjeta-servicio__nombre">Matrimonios</h3>
+                            <p class="tarjeta-servicio__descripcion">Ramos de novia, centros de mesa, decoración de altar y pétalos para el día más importante.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta-servicio">
+                        <div class="tarjeta-servicio__imagen">
+                            <img src="/img/quinceaños.png" alt="Quince Años">
+                        </div>
+                        <div class="tarjeta-servicio__info">
+                            <h3 class="tarjeta-servicio__nombre">Quince Años</h3>
+                            <p class="tarjeta-servicio__descripcion">Arreglos que celebran la transición a la juventud con frescura y color.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta-servicio">
+                        <div class="tarjeta-servicio__imagen">
+                            <img src="/img/empresa.png" alt="Corporativos">
+                        </div>
+                        <div class="tarjeta-servicio__info">
+                            <h3 class="tarjeta-servicio__nombre">Corporativos</h3>
+                            <p class="tarjeta-servicio__descripcion">Recepciones, lanzamientos y espacios que hablan el lenguaje de la elegancia.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- ========== VIDEOS - REDISEÑADO ESTILO BOUTIQUE ========== -->
-        <section class="seccion videos" id="videos">
+                <!-- ========== GALERÍA DE EVENTOS PREVIOS (6 fotos) ========== -->
+        <section class="seccion" id="galeria-eventos">
+            <div class="seccion__contenedor">
+                <h2 class="seccion__titulo">Galería de Eventos</h2>
+                <p class="seccion__descripcion">Momentos inolvidables que hemos decorado con todo nuestro amor.</p>
+                <div class="galeria-eventos__cuadricula">
+                    <div class="evento-item">
+                        <div class="evento-item__imagen">
+                            <img src="/img/galeria1.png" alt="Boda de Camila y Andrés">
+                        </div>
+                        <div class="evento-item__info">
+                            <h3 class="evento-item__titulo">Boda de Camila y Andrés</h3>
+                            <p class="evento-item__descripcion">Centros de mesa con rosas blancas, eucalipto fresco y velas doradas. Una noche mágica llena de romanticismo y elegancia.</p>
+                        </div>
+                    </div>
+
+                    <div class="evento-item">
+                        <div class="evento-item__imagen">
+                            <img src="/img/galeria2.png" alt="Quince de Valentina">
+                        </div>
+                        <div class="evento-item__info">
+                            <h3 class="evento-item__titulo">Quince de Valentina</h3>
+                            <p class="evento-item__descripcion">Arreglos florales en tonos rosados y dorados. Un sueño hecho realidad para la quinceañera, lleno de frescura y color.</p>
+                        </div>
+                    </div>
+
+                    <div class="evento-item">
+                        <div class="evento-item__imagen">
+                            <img src="/img/galeria3.png" alt="Lanzamiento Empresarial">
+                        </div>
+                        <div class="evento-item__info">
+                            <h3 class="evento-item__titulo">Lanzamiento Empresarial</h3>
+                            <p class="evento-item__descripcion">Decoración corporativa con flores blancas y follaje verde. Elegancia y sofisticación para una noche de gala empresarial.</p>
+                        </div>
+                    </div>
+
+                    <div class="evento-item">
+                        <div class="evento-item__imagen">
+                            <img src="/img/galeria4.png" alt="Graduación de Sofía">
+                        </div>
+                        <div class="evento-item__info">
+                            <h3 class="evento-item__titulo">Graduación de Sofía</h3>
+                            <p class="evento-item__descripcion">Ramos personalizados con girasoles, margaritas y follaje natural. Alegría y orgullo para celebrar un logro importante.</p>
+                        </div>
+                    </div>
+
+                    <div class="evento-item">
+                        <div class="evento-item__imagen">
+                            <img src="/img/galeria5.png" alt="Bodas de Oro">
+                        </div>
+                        <div class="evento-item__info">
+                            <h3 class="evento-item__titulo">Bodas de Oro</h3>
+                            <p class="evento-item__descripcion">Centros de mesa con rosas doradas, toques de salvia y velas. Celebrando 50 años de amor incondicional.</p>
+                        </div>
+                    </div>
+
+                    <div class="evento-item">
+                        <div class="evento-item__imagen">
+                            <img src="/img/imagen2.png" alt="Bautizo de Mateo">
+                        </div>
+                        <div class="evento-item__info">
+                            <h3 class="evento-item__titulo">Bautizo de Mateo</h3>
+                            <p class="evento-item__descripcion">Arreglos en tonos pastel con rosas blancas, lirios y hortensias. Ternura, delicadeza y bendiciones para una celebración familiar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== FORMULARIO DE PEDIDO ========== -->
+        <section class="seccion pedido" id="pedido">
+            <div class="seccion__contenedor">
+                <h2 class="seccion__titulo">Pedido Personalizado</h2>
+                <p class="seccion__descripcion">Cuéntanos qué necesitas y nosotras nos encargamos de crear el arreglo perfecto.</p>
+                <div class="pedido__formulario">
+                    <form action="#" method="post">
+                        <div class="pedido__grid">
+                            <div class="formulario__grupo"><label class="formulario__label">Nombre completo</label><input type="text" class="formulario__input" placeholder="Tu nombre"></div>
+                            <div class="formulario__grupo"><label class="formulario__label">Teléfono / WhatsApp</label><input type="tel" class="formulario__input" placeholder="300 123 4567"></div>
+                            <div class="formulario__grupo"><label class="formulario__label">Correo electrónico</label><input type="email" class="formulario__input" placeholder="correo@ejemplo.com"></div>
+                            <div class="formulario__grupo"><label class="formulario__label">Tipo de arreglo</label><select class="formulario__select"><option>Primer Beso</option><option>Mañana de Domingo</option><option>Corazón Tranquilo</option><option>Fiesta de Cumpleaños</option><option>Disculpa Sincera</option><option>Bienvenido Bebé</option><option>Hasta Pronto</option><option>Aniversario</option><option>Personalizado</option></select></div>
+                            <div class="formulario__grupo"><label class="formulario__label">Ocasión</label><select class="formulario__select"><option>Aniversario</option><option>Cumpleaños</option><option>Disculpa</option><option>Nacimiento</option><option>Funeral</option><option>Graduación</option><option>Sin ocasión especial</option></select></div>
+                            <div class="formulario__grupo"><label class="formulario__label">Fecha de entrega</label><input type="date" class="formulario__input"></div>
+                            <div class="formulario__grupo"><label class="formulario__label">Hora de entrega</label><input type="time" class="formulario__input"></div>
+                            <div class="formulario__grupo"><label class="formulario__label">Dirección de entrega</label><input type="text" class="formulario__input" placeholder="Calle, número, barrio"></div>
+                        </div>
+                        <div class="formulario__grupo"><label class="formulario__label">Mensaje para la tarjeta</label><textarea class="formulario__textarea" placeholder="Escribe el mensaje que llevará la tarjeta..."></textarea></div>
+                        <button type="submit" class="btn btn--primario" style="width:100%">Enviar pedido</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== BLOG ========== -->
+        <section class="seccion" id="blog">
+            <div class="seccion__contenedor">
+                <h2 class="seccion__titulo">Blog de Cuidado de Flores</h2>
+                <p class="seccion__descripcion">Consejos y secretos para que tus flores duren más y siempre luzcan hermosas.</p>
+                <div class="blog__cuadricula">
+                    <article class="articulo">
+                        <h3 class="articulo__titulo">Cómo hacer durar más tus flores</h3>
+                        <p class="articulo__resumen">Corta los tallos en diagonal, cambia el agua cada dos días y evita el sol directo. Estos simples consejos pueden duplicar la vida de tu arreglo.</p>
+                        <a href="https://www.rosadehebron.com/como-cuidar-tus-flores-para-que-duren-mas-tiempo-en-casa/?srsltid=AfmBOopqchjJX-LO7pEvxOWwqdGIHJimT2b3PYRqRlydLsXUkk_4Wy-b" class="articulo__enlace">Leer más →</a>
+                    </article>
+
+
+                             <article class="articulo">
+    <h3 class="articulo__titulo">El lenguaje de las flores</h3>
+
+    <p class="articulo__resumen">
+        ¿Sabías que cada flor tiene un significado? 
+        Las rosas rojas son pasión, los lirios blancos pureza, 
+        y los girasoles alegría.
+    </p>
+    <a href="https://floriografia.info/?utm_source=chatgpt.com" 
+       class="articulo__enlace" 
+       target="_blank">
+       Leer más →
+    </a>
+</article>
+
+                    <article class="articulo">
+                        <h3 class="articulo__titulo">Flores de temporada en Colombia</h3>
+                        <p class="articulo__resumen">En marzo: astromelias y hortensias. En septiembre: rosas y crisantemos. Aprovecha las flores más frescas y económicas.</p>
+                        <a href="https://flowerlovers.com.co/tipos-de-flores-segun-temporada/" class="articulo__enlace">Leer más →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== ENVÍOS + TESTIMONIOS ========== -->
+        <section class="seccion" id="contacto">
+            <div class="seccion__contenedor">
+                <div class="envios-testimonios__grid">
+                    <div class="info-box">
+                        <h3 class="info-box__titulo">Información de Envíos</h3>
+                        <p><strong>Zonas de cobertura:</strong> Bucaramanga.</p>
+                        <p style="margin-top: 16px;"><strong>Costos:</strong><br>• Envío dentro de Bucaramanga: $10.000<br>• Área metropolitana: $15.000<br>• Envíos gratis en pedidos superiores a $120.000</p>
+                        <p style="margin-top: 16px;"><strong>Tiempos de entrega:</strong><br>• Pedidos antes de 12pm: entrega el mismo día<br>• Pedidos después de 12pm: entrega al día siguiente</p>
+                    </div>
+                    <div class="info-box">
+                        <h3 class="info-box__titulo">Testimonios de clientes</h3>
+                        <div class="testimonio">
+                            <p class="testimonio__texto">"Pedí el arreglo 'Primer Beso' para mi esposa en nuestro aniversario. Lulú escribió una tarjeta hermosa y las flores duraron más de dos semanas. ¡Quedé como un héroe!"</p>
+                            <p class="testimonio__autor">— Andrés M., Floridablanca</p>
+                        </div>
+
+                        <div class="testimonio">
+                            <p class="testimonio__texto">"Contratamos a Jardín de Lulú para la decoración de nuestra boda. Todo fue perfecto, más bonito de lo que imaginamos. Mi ramo de novia era un sueño."</p>
+                            <p class="testimonio__autor">— Camila R., Bucaramanga</p>
+                        </div>
+
+                        <div class="testimonio">
+                            <p class="testimonio__texto">"Las suscripciones semanales para mi oficina son lo mejor. Todos los lunes llegan flores frescas y mis clientes siempre lo notan. ¡Recomendadísimo!"</p>
+                            <p class="testimonio__autor">— Carolina S., Girón</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== VIDEOS (4 videos, 1 con audio) ========== -->
+        <section class="seccion" id="videos">
             <div class="seccion__contenedor">
                 <h2 class="seccion__titulo">Detrás de los arreglos</h2>
                 <p class="seccion__descripcion">El arte floral en movimiento. Disfruta de nuestros procesos creativos.</p>
-                
-                <div class="videos__grid">
-                    <!-- Video 1 -->
+                <div class="videos__cuadricula">
                     <div class="video-card">
-                        <div class="video-card__contenedor">
-                            <video class="video-card__reproductor" controls>
-                                <source src="./videos/entrega.mp4" type="video/mp4">
-                            </video>
-                            <div class="video-card__overlay">
-                                <span class="video-card__icono">▶</span>
-                            </div>
-                        </div>
-                        <div class="video-card__info">
-                            <h3 class="video-card__nombre">Entrega Especial</h3>
-                            <p class="video-card__descripcion">El momento de entregar un arreglo único.</p>
-                        </div>
+                        <video class="video-card__reproductor" controls><source src="/videos/entrega.mp4" type="video/mp4">Tu navegador no soporta video.</video>
                     </div>
-
-                    <!-- Video 2 -->
                     <div class="video-card">
-                        <div class="video-card__contenedor">
-                            <video class="video-card__reproductor" controls>
-                                <source src="./videos/primer beso.mp4" type="video/mp4">
-                            </video>
-                            <div class="video-card__overlay">
-                                <span class="video-card__icono">▶</span>
-                            </div>
-                        </div>
-                        <div class="video-card__info">
-                            <h3 class="video-card__nombre">Primer Beso</h3>
-                            <p class="video-card__descripcion">Creando el arreglo más romántico.</p>
-                        </div>
+                        <video class="video-card__reproductor" controls muted><source src="/videos/primer beso.mp4" type="video/mp4"></video>
                     </div>
-
-                    <!-- Video 3 -->
                     <div class="video-card">
-                        <div class="video-card__contenedor">
-                            <video class="video-card__reproductor" controls>
-                                <source src="./videos/Video Cinematográfico Floristería.mp4" type="video/mp4">
-                            </video>
-                            <div class="video-card__overlay">
-                                <span class="video-card__icono">▶</span>
-                            </div>
-                        </div>
-                        <div class="video-card__info">
-                            <h3 class="video-card__nombre">Cinematografía Floral</h3>
-                            <p class="video-card__descripcion">Un recorrido visual por nuestro taller.</p>
-                        </div>
+                        <video class="video-card__reproductor" controls muted><source src="/videos/Video Cinematográfico Floristería.mp4" type="video/mp4"></video>
                     </div>
-
-                    <!-- Video 4 -->
                     <div class="video-card">
-                        <div class="video-card__contenedor">
-                            <video class="video-card__reproductor" controls>
-                                <source src="./videos/video1.mp4" type="video/mp4">
-                            </video>
-                            <div class="video-card__overlay">
-                                <span class="video-card__icono">▶</span>
-                            </div>
-                        </div>
-                        <div class="video-card__info">
-                            <h3 class="video-card__nombre">Inspiración Diaria</h3>
-                            <p class="video-card__descripcion">La magia de crear con flores frescas.</p>
-                        </div>
+                        <video class="video-card__reproductor" controls muted><source src="/videos/entrega.mp4" type="video/mp4"></video>
                     </div>
                 </div>
             </div>
         </section>
-        
-    <footer class="footer">
+
+        <!-- ========== INSTAGRAM DESTACADO ========== -->
+        <section class="seccion instagram">
+            <div class="seccion__contenedor">
+                <h2 class="seccion__titulo">Síguenos en Instagram</h2>
+                <p class="seccion__descripcion">Descubre nuestro trabajo diario, promociones exclusivas y el detrás de cámaras de Jardín de Lulú.</p>
+                <a href="" class="instagram-link" target="_blank">@jardindelulu</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
         <p>&copy; 2026 Jardín de Lulú - Flores que cuentan historias</p>
+        <p style="margin-top: 16px; font-size: 12px; opacity: 0.7;">Bucaramanga, Colombia | Tel: 300 123 4567 | Hecho con amor y flores frescas</p>
     </footer>
 
     <style>
-       
-
+        /* ========== VARIABLES CSS ========== */
 :root {
     --color-texto: #3B3B3B;
     --color-salvia: #A7B29D;
-    --color-salvia-oscuro: #8A9A7E;
-    --color-fondo-claro: #F4F1EC;
-    --color-fondo-rosado: #ead6cf;
-    --color-texto-claro: #6B6B6B;
-    --color-blanco: #FFFFFF;
-    --color-dorado: #C4A882;
+    --color-fondo: #F4F1EC;
+    --color-rosado: #ead6cf;
+    --color-dorado: #c9b896;
     
-    --fuente-titulos: 'Playfair Display', Georgia, 'Times New Roman', serif;
-    --fuente-texto: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+    --fuente-titulos: 'Playfair Display', serif;
+    --fuente-cuerpo: 'Lato', sans-serif;
     
-    --borde-radius: 16px;
-    --sombra-suave: 0 8px 30px rgba(0, 0, 0, 0.05);
-    --sombra-media: 0 12px 40px rgba(0, 0, 0, 0.10);
-    --sombra-fuerte: 0 20px 60px rgba(0, 0, 0, 0.12);
-    --transicion: 0.3s ease-in-out;
+    --borde: 12px;
+    --sombra: 0 8px 30px rgba(0, 0, 0, 0.05);
+    --sombra-fuerte: 0 12px 40px rgba(0, 0, 0, 0.08);
+    --transicion: 0.3s ease;
 }
 
 * {
@@ -345,9 +463,9 @@ html {
 }
 
 body {
-    font-family: var(--fuente-texto);
+    font-family: var(--fuente-cuerpo);
     color: var(--color-texto);
-    background-color: var(--color-fondo-claro);
+    background-color: var(--color-fondo);
     line-height: 1.6;
 }
 
@@ -355,29 +473,27 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+    background-color: transparent;
 }
 
-/* Encabezado */
-.header {
-    background-color: var(--color-fondo-claro);
-    padding: 16px 32px;
+/* ========== ENCABEZADO ========== */
+.encabezado {
+    background-color: var(--color-fondo);
+    padding: 20px 32px;
     border-bottom: 1px solid rgba(0,0,0,0.05);
-    position: sticky;
-    top: 0;
-    z-index: 100;
 }
 
-.header__contenedor {
+.encabezado__contenedor {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 20px;
 }
 
-.header__logo {
+.encabezado__logo {
     font-family: var(--fuente-titulos);
     font-size: 28px;
     font-weight: 700;
@@ -385,25 +501,109 @@ img {
     text-decoration: none;
 }
 
-.header__menu {
+.encabezado__logo span {
+    font-size: 12px;
+    font-family: var(--fuente-cuerpo);
+    font-weight: 400;
+    color: var(--color-texto);
+    display: block;
+    letter-spacing: 2px;
+}
+
+.encabezado__menu {
     display: flex;
     list-style: none;
     gap: 32px;
     flex-wrap: wrap;
 }
 
-.header__link {
+.encabezado__enlace {
     text-decoration: none;
     color: var(--color-texto);
     font-weight: 500;
     transition: color var(--transicion);
 }
 
-.header__link:hover {
+.encabezado__enlace:hover {
     color: var(--color-salvia);
 }
 
-/* Títulos de sección general */
+/* ========== HERO ========== */
+.hero {
+    background: linear-gradient(135deg, var(--color-rosado) 0%, var(--color-fondo) 100%);
+    padding: 80px 32px;
+    text-align: center;
+}
+
+.hero__contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero__banner {
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: var(--color-salvia);
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.hero__eslogan {
+    font-family: var(--fuente-titulos);
+    font-size: 56px;
+    font-weight: 600;
+    color: var(--color-texto);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero__frase {
+    font-size: 20px;
+    color: var(--color-texto);
+    opacity: 0.8;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.hero__botones {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 36px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all var(--transicion);
+}
+
+.btn--primario {
+    background-color: var(--color-salvia);
+    color: white;
+}
+
+.btn--primario:hover {
+    background-color: #8a9b7a;
+    transform: translateY(-3px);
+}
+
+.btn--secundario {
+    background-color: transparent;
+    color: var(--color-texto);
+    border: 2px solid var(--color-salvia);
+}
+
+.btn--secundario:hover {
+    background-color: var(--color-salvia);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* ========== SECCIONES GENERALES ========== */
 .seccion {
     padding: 80px 32px;
 }
@@ -415,7 +615,7 @@ img {
 
 .seccion__titulo {
     font-family: var(--fuente-titulos);
-    font-size: 40px;
+    font-size: 42px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 16px;
@@ -428,11 +628,12 @@ img {
     height: 3px;
     background-color: var(--color-salvia);
     margin: 12px auto 0;
+    border-radius: 4px;
 }
 
 .seccion__descripcion {
     text-align: center;
-    color: var(--color-texto-claro);
+    opacity: 0.75;
     max-width: 650px;
     margin: 0 auto 48px;
     font-size: 18px;
@@ -440,7 +641,7 @@ img {
 
 /* ========== SOBRE LULÚ ========== */
 .sobre-lulu {
-    background-color: var(--color-fondo-rosado);
+    background-color: var(--color-rosado);
 }
 
 .sobre-lulu__contenedor {
@@ -453,15 +654,14 @@ img {
 .sobre-lulu__imagen {
     flex: 1;
     min-width: 280px;
-    border-radius: var(--borde-radius);
+    border-radius: var(--borde);
     overflow: hidden;
-    box-shadow: var(--sombra-media);
+    box-shadow: var(--sombra-fuerte);
 }
 
 .sobre-lulu__imagen img {
     width: 100%;
     height: auto;
-    display: block;
 }
 
 .sobre-lulu__texto {
@@ -485,13 +685,10 @@ img {
     font-size: 22px;
     color: var(--color-salvia);
     margin-bottom: 20px;
-    line-height: 1.4;
 }
 
 .sobre-lulu__texto p {
     margin-bottom: 16px;
-    font-size: 16px;
-    line-height: 1.6;
 }
 
 .sobre-lulu__sueno {
@@ -511,425 +708,516 @@ img {
 }
 
 /* ========== CATÁLOGO ========== */
-.catalogo {
-    background-color: var(--color-fondo-claro);
-}
-
-.catalogo__grid {
+.catalogo__cuadricula {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
 }
 
-.card-producto {
-    background-color: var(--color-blanco);
-    border-radius: var(--borde-radius);
+.tarjeta {
+    background-color: var(--color-rosado);
+    border-radius: var(--borde);
     overflow: hidden;
-    box-shadow: var(--sombra-suave);
+    box-shadow: var(--sombra);
     transition: all var(--transicion);
 }
 
-.card-producto:hover {
+.tarjeta:hover {
     transform: translateY(-6px);
-    box-shadow: var(--sombra-media);
+    box-shadow: var(--sombra-fuerte);
 }
 
-.card-producto__imagen {
-    height: 280px;
+.tarjeta__imagen {
+    height: 260px;
     overflow: hidden;
-    background-color: var(--color-fondo-claro);
+    background-color: var(--color-fondo);
 }
 
-.card-producto__imagen img {
+.tarjeta__imagen img {
     width: 100%;
-    height: 280px;
+    height: 100%;
     object-fit: contain;
-    transition: transform 0.4s;
 }
 
-.card-producto:hover .card-producto__imagen img {
-    transform: scale(1.03);
+.tarjeta__info {
+    padding: 20px;
 }
 
-.card-producto__info {
-    padding: 16px;
-}
-
-.card-producto__nombre {
+.tarjeta__nombre {
     font-family: var(--fuente-titulos);
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
-.card-producto__descripcion {
+.tarjeta__ocasion {
+    font-size: 12px;
+    color: var(--color-salvia);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.tarjeta__descripcion {
     font-size: 14px;
-    color: var(--color-texto-claro);
+    opacity: 0.8;
     margin-bottom: 12px;
-    line-height: 1.4;
 }
 
-.card-producto__precio {
+.tarjeta__precio {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
     color: var(--color-salvia);
 }
 
-/* ========== EVENTOS ========== */
-.eventos {
-    background-color: var(--color-fondo-rosado);
+/* ========== SUSCRIPCIONES ========== */
+.suscripciones {
+    background-color: var(--color-rosado);
 }
 
-.eventos__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-}
-
-.evento-card {
-    background-color: var(--color-blanco);
-    border-radius: var(--borde-radius);
-    overflow: hidden;
-    box-shadow: var(--sombra-suave);
-    transition: all var(--transicion);
-}
-
-.evento-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--sombra-media);
-}
-
-.evento-card__imagen {
-    height: 420px;
-    overflow: hidden;
-}
-
-.evento-card__imagen img {
-    width: 100%;
-    height: 420px;
-    object-fit: cover;
-    transition: transform 0.4s;
-}
-
-.evento-card:hover .evento-card__imagen img {
-    transform: scale(1.05);
-}
-
-.evento-card__info {
-    padding: 28px;
-}
-
-.evento-card__nombre {
-    font-family: var(--fuente-titulos);
-    font-size: 26px;
-    margin-bottom: 16px;
-}
-
-.evento-card__descripcion {
-    font-size: 16px;
-    color: var(--color-texto-claro);
-    line-height: 1.7;
-}
-
-/* ========== GALERÍA ========== */
-.galeria {
-    background-color: var(--color-fondo-claro);
-}
-
-.galeria__grid {
+.suscripciones__cuadricula {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
 }
 
-.galeria__item {
-    border-radius: var(--borde-radius);
-    overflow: hidden;
-    box-shadow: var(--sombra-suave);
-    transition: all var(--transicion);
-    height: 420px;
-}
-
-.galeria__item:hover {
-    transform: scale(1.02);
-    box-shadow: var(--sombra-media);
-}
-
-.galeria__item img {
-    width: 100%;
-    height: 420px;
-    object-fit: cover;
-    transition: transform 0.4s ease;
-    display: block;
-}
-
-.galeria__item:hover img {
-    transform: scale(1.05);
-}
-
-/* ============================================================
-   ========== VIDEOS - REDISEÑADO ESTILO BOUTIQUE ==========
-   ============================================================ */
-.videos {
-    background-color: var(--color-fondo-rosado);
-    padding: 80px 32px;
-}
-
-.videos__grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 32px;
-}
-
-.video-card {
-    background-color: var(--color-blanco);
-    border-radius: var(--borde-radius);
-    overflow: hidden;
-    box-shadow: var(--sombra-suave);
+.plan {
+    background-color: var(--color-fondo);
+    border-radius: var(--borde);
+    padding: 40px 24px;
+    text-align: center;
     transition: all var(--transicion);
 }
 
-.video-card:hover {
+.plan:hover {
     transform: translateY(-8px);
     box-shadow: var(--sombra-fuerte);
 }
 
-.video-card__contenedor {
-    position: relative;
+.plan__nombre {
+    font-family: var(--fuente-titulos);
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.plan__precio {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-salvia);
+    margin-bottom: 24px;
+}
+
+.plan__precio span {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.plan__descripcion {
+    margin-bottom: 32px;
+    opacity: 0.8;
+}
+
+.btn--plan {
+    background-color: transparent;
+    border: 2px solid var(--color-salvia);
+    padding: 10px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: var(--color-texto);
+    font-weight: 600;
+    display: inline-block;
+    transition: all var(--transicion);
+}
+
+.btn--plan:hover {
+    background-color: var(--color-salvia);
+    color: white;
+}
+
+/* ========== SERVICIOS ========== */
+.servicios__cuadricula {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.tarjeta-servicio {
+    background-color: var(--color-rosado);
+    border-radius: var(--borde);
     overflow: hidden;
-    background-color: #1a1a1a;
-    cursor: pointer;
+    box-shadow: var(--sombra);
+    transition: all var(--transicion);
+}
+
+.tarjeta-servicio:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--sombra-fuerte);
+}
+
+.tarjeta-servicio__imagen {
+    height: 380px;
+    overflow: hidden;
+    background-color: var(--color-fondo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta-servicio__imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.4s;
+}
+
+.tarjeta-servicio:hover .tarjeta-servicio__imagen img {
+    transform: scale(1.03);
+}
+
+.tarjeta-servicio__info {
+    padding: 24px;
+}
+
+.tarjeta-servicio__nombre {
+    font-family: var(--fuente-titulos);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.tarjeta-servicio__descripcion {
+    font-size: 15px;
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+/* ========== GALERÍA DE EVENTOS (más alargada) ========== */
+.galeria-eventos__cuadricula {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.evento-item {
+    border-radius: var(--borde);
+    overflow: hidden;
+    background-color: var(--color-rosado);
+    transition: all var(--transicion);
+}
+
+.evento-item:hover {
+    transform: scale(1.02);
+    box-shadow: var(--sombra-fuerte);
+}
+
+.evento-item__imagen {
+    height: 380px;
+    overflow: hidden;
+    background-color: var(--color-fondo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.evento-item__imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.evento-item__info {
+    padding: 20px;
+}
+
+.evento-item__titulo {
+    font-family: var(--fuente-titulos);
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.evento-item__descripcion {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* ========== FORMULARIO DE PEDIDO ========== */
+.pedido {
+    background-color: var(--color-rosado);
+}
+
+.pedido__formulario {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--color-fondo);
+    padding: 40px;
+    border-radius: var(--borde);
+}
+
+.pedido__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.formulario__grupo {
+    margin-bottom: 20px;
+}
+
+.formulario__label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.formulario__input,
+.formulario__select,
+.formulario__textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: var(--fuente-cuerpo);
+    background-color: white;
+}
+
+.formulario__textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* ========== BLOG ========== */
+.blog__cuadricula {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.articulo {
+    background-color: var(--color-rosado);
+    border-radius: var(--borde);
+    padding: 28px;
+    transition: all var(--transicion);
+}
+
+.articulo:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--sombra-fuerte);
+}
+
+.articulo__titulo {
+    font-family: var(--fuente-titulos);
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.articulo__resumen {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 16px;
+}
+
+.articulo__enlace {
+    color: var(--color-salvia);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ========== ENVÍOS + TESTIMONIOS ========== */
+.envios-testimonios__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+}
+
+.info-box {
+    background-color: var(--color-rosado);
+    border-radius: var(--borde);
+    padding: 32px;
+}
+
+.info-box__titulo {
+    font-family: var(--fuente-titulos);
+    font-size: 26px;
+    margin-bottom: 24px;
+}
+
+.testimonio {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.testimonio:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.testimonio__texto {
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+.testimonio__autor {
+    font-weight: 600;
+    color: var(--color-salvia);
+}
+
+/* ========== VIDEOS ========== */
+.videos__cuadricula {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.video-card {
+    background-color: var(--color-rosado);
+    border-radius: var(--borde);
+    padding: 20px;
+    transition: transform var(--transicion);
+}
+
+.video-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--sombra-fuerte);
 }
 
 .video-card__reproductor {
     width: 100%;
-    height: 280px;
-    display: block;
-    background-color: #0a0a0a;
-    object-fit: cover;
+    border-radius: 8px;
+    background-color: #000;
+    height: 260px;
 }
 
-/* Overlay con botón de reproducción */
-.video-card__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    pointer-events: none;
+.video-card__nota {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 8px;
 }
 
-.video-card__contenedor:hover .video-card__overlay {
-    opacity: 1;
-}
-
-.video-card__icono {
+/* ========== WHATSAPP ========== */
+.whatsapp {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background-color: #25D366;
     width: 60px;
     height: 60px;
-    background: rgba(255, 255, 255, 0.9);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
-    color: var(--color-salvia-oscuro);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform var(--transicion);
+    text-decoration: none;
+    z-index: 100;
 }
 
-.video-card__contenedor:hover .video-card__icono {
+.whatsapp:hover {
     transform: scale(1.1);
-    background: #ffffff;
 }
 
-.video-card__info {
-    padding: 20px 24px 24px;
+.whatsapp__icono {
+    font-size: 32px;
+    color: white;
 }
 
-.video-card__nombre {
-    font-family: var(--fuente-titulos);
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--color-texto);
-    margin-bottom: 6px;
-    letter-spacing: 0.5px;
-}
-
-.video-card__descripcion {
-    font-size: 14px;
-    color: var(--color-texto-claro);
-    line-height: 1.5;
-    margin-bottom: 0;
-}
-
-/* Pequeño detalle decorativo */
-.video-card__info::after {
-    content: '';
-    display: block;
-    width: 30px;
-    height: 2px;
-    background: var(--color-dorado);
-    margin-top: 12px;
-    border-radius: 2px;
-}
-
-/* ========== FOOTER ========== */
-.footer {
-    background-color: var(--color-texto);
-    color: #ccc;
+/* ========== INSTAGRAM ========== */
+.instagram {
     text-align: center;
-    padding: 32px;
-    font-size: 14px;
 }
 
-/* ========== RESPONSIVE ========== */
+.instagram-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background-color: var(--color-salvia);
+    color: white;
+    padding: 14px 32px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all var(--transicion);
+}
+
+.instagram-link:hover {
+    background-color: #8a9b7a;
+    transform: translateY(-2px);
+}
+
+/* ========== PIE ========== */
+.pie {
+    background-color: var(--color-texto);
+    color: var(--color-fondo);
+    text-align: center;
+    padding: 40px 32px;
+}
+
+/* ========== RESPONSIVIDAD ========== */
 @media (max-width: 992px) {
+    .catalogo__cuadricula,
+    .suscripciones__cuadricula,
+    .servicios__cuadricula,
+    .galeria-eventos__cuadricula,
+    .blog__cuadricula,
+    .envios-testimonios__grid,
+    .pedido__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .sobre-lulu__contenedor {
         flex-direction: column;
         text-align: center;
     }
-    
     .sobre-lulu__titulo::after {
         margin-left: auto;
         margin-right: auto;
     }
-    
-    .sobre-lulu__sueno {
-        text-align: left;
-    }
-    
-    .catalogo__grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-    }
-    
-    .eventos__grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-    }
-    
-    .evento-card__imagen {
-        height: 360px;
-    }
-    
-    .evento-card__imagen img {
-        height: 360px;
-    }
-    
-    .evento-card__info {
-        padding: 24px;
-    }
-    
-    .evento-card__nombre {
-        font-size: 24px;
-    }
-    
-    .galeria__grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-    }
-    
-    .galeria__item {
-        height: 360px;
-    }
-    
-    .galeria__item img {
-        height: 360px;
-    }
-    
-    /* VIDEOS - Tablet: 2 columnas */
-    .videos__grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-    }
-
-    .video-card__reproductor {
-        height: 240px;
+    .hero__eslogan {
+        font-size: 42px;
     }
 }
 
 @media (max-width: 600px) {
-    .header__contenedor {
+    .encabezado__contenedor {
         flex-direction: column;
         text-align: center;
     }
-    
-    .header__menu {
+    .encabezado__menu {
         justify-content: center;
         gap: 16px;
     }
-    
     .seccion {
         padding: 48px 16px;
     }
-    
     .seccion__titulo {
         font-size: 32px;
     }
-    
-    .sobre-lulu__imagen {
-        min-width: 100%;
-    }
-    
-    .sobre-lulu__destacado {
-        font-size: 18px;
-    }
-    
-    .catalogo__grid,
-    .eventos__grid,
-    .galeria__grid {
+    .catalogo__cuadricula,
+    .suscripciones__cuadricula,
+    .servicios__cuadricula,
+    .galeria-eventos__cuadricula,
+    .blog__cuadricula,
+    .envios-testimonios__grid,
+    .videos__cuadricula,
+    .pedido__grid {
         grid-template-columns: 1fr;
     }
-
-    /* VIDEOS - Móvil: 1 columna */
-    .videos__grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
+    .hero__eslogan {
+        font-size: 32px;
     }
-
+    .hero__botones {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tarjeta-servicio__imagen {
+        height: 280px;
+    }
+    .evento-item__imagen {
+        height: 280px;
+    }
     .video-card__reproductor {
-        height: 220px;
-    }
-    
-    .card-producto__imagen {
-        height: 240px;
-    }
-    
-    .card-producto__imagen img {
-        height: 240px;
-    }
-    
-    .evento-card__imagen {
-        height: 380px;
-    }
-    
-    .evento-card__imagen img {
-        height: 380px;
-    }
-    
-    .evento-card__info {
-        padding: 20px;
-    }
-    
-    .evento-card__nombre {
-        font-size: 22px;
-    }
-    
-    .galeria__item {
-        height: 400px;
-    }
-    
-    .galeria__item img {
-        height: 400px;
+        height: 200px;
     }
 }
     </style>
-
 </body>
 </html>
