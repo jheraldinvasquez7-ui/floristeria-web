@@ -199,7 +199,7 @@
             </div>
         </section>
 
-        <!-- ========== SERVICIOS PARA EVENTOS (tres tarjetas una al lado de la otra) ========== -->
+        <!-- ========== SERVICIOS PARA EVENTOS ========== -->
         <section class="seccion" id="servicios">
             <div class="seccion__contenedor">
                 <h2 class="seccion__titulo">Servicios para Eventos</h2>
@@ -236,7 +236,7 @@
             </div>
         </section>
 
-                <!-- ========== GALERÍA DE EVENTOS PREVIOS (6 fotos) ========== -->
+        <!-- ========== GALERÍA DE EVENTOS PREVIOS ========== -->
         <section class="seccion" id="galeria-eventos">
             <div class="seccion__contenedor">
                 <h2 class="seccion__titulo">Galería de Eventos</h2>
@@ -338,29 +338,19 @@
                     <article class="articulo">
                         <h3 class="articulo__titulo">Cómo hacer durar más tus flores</h3>
                         <p class="articulo__resumen">Corta los tallos en diagonal, cambia el agua cada dos días y evita el sol directo. Estos simples consejos pueden duplicar la vida de tu arreglo.</p>
-                        <a href="https://www.rosadehebron.com/como-cuidar-tus-flores-para-que-duren-mas-tiempo-en-casa/?srsltid=AfmBOopqchjJX-LO7pEvxOWwqdGIHJimT2b3PYRqRlydLsXUkk_4Wy-b" class="articulo__enlace">Leer más →</a>
+                        <a href="https://www.rosadehebron.com/como-cuidar-tus-flores-para-que-duren-mas-tiempo-en-casa/?srsltid=AfmBOopqchjJX-LO7pEvxOWwqdGIHJimT2b3PYRqRlydLsXUkk_4Wy-b" class="articulo__enlace" target="_blank">Leer más →</a>
                     </article>
 
-
-                             <article class="articulo">
-    <h3 class="articulo__titulo">El lenguaje de las flores</h3>
-
-    <p class="articulo__resumen">
-        ¿Sabías que cada flor tiene un significado? 
-        Las rosas rojas son pasión, los lirios blancos pureza, 
-        y los girasoles alegría.
-    </p>
-    <a href="https://floriografia.info/?utm_source=chatgpt.com" 
-       class="articulo__enlace" 
-       target="_blank">
-       Leer más →
-    </a>
-</article>
+                    <article class="articulo">
+                        <h3 class="articulo__titulo">El lenguaje de las flores</h3>
+                        <p class="articulo__resumen">¿Sabías que cada flor tiene un significado? Las rosas rojas son pasión, los lirios blancos pureza, y los girasoles alegría.</p>
+                        <a href="https://floriografia.info/?utm_source=chatgpt.com" class="articulo__enlace" target="_blank">Leer más →</a>
+                    </article>
 
                     <article class="articulo">
                         <h3 class="articulo__titulo">Flores de temporada en Colombia</h3>
                         <p class="articulo__resumen">En marzo: astromelias y hortensias. En septiembre: rosas y crisantemos. Aprovecha las flores más frescas y económicas.</p>
-                        <a href="https://flowerlovers.com.co/tipos-de-flores-segun-temporada/" class="articulo__enlace">Leer más →</a>
+                        <a href="https://flowerlovers.com.co/tipos-de-flores-segun-temporada/" class="articulo__enlace" target="_blank">Leer más →</a>
                     </article>
                 </div>
             </div>
@@ -397,23 +387,32 @@
             </div>
         </section>
 
-        <!-- ========== VIDEOS (4 videos, 1 con audio) ========== -->
+        <!-- ========== VIDEOS (4 videos) ========== -->
         <section class="seccion" id="videos">
             <div class="seccion__contenedor">
                 <h2 class="seccion__titulo">Detrás de los arreglos</h2>
                 <p class="seccion__descripcion">El arte floral en movimiento. Disfruta de nuestros procesos creativos.</p>
                 <div class="videos__cuadricula">
                     <div class="video-card">
-                        <video class="video-card__reproductor" controls><source src="./videos/entrega.mp4" type="video/mp4">Tu navegador no soporta video.</video>
+                        <video class="video-card__reproductor" controls>
+                            <source src="./videos/entrega.mp4" type="video/mp4">
+                            Tu navegador no soporta video.
+                        </video>
                     </div>
                     <div class="video-card">
-                        <video class="video-card__reproductor" controls muted><source src="./videos/primer beso.mp4" type="video/mp4"></video>
+                        <video class="video-card__reproductor" controls muted>
+                            <source src="./videos/primer beso.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <div class="video-card">
-                        <video class="video-card__reproductor" controls muted><source src="./videos/Video Cinematográfico Floristería.mp4" type="video/mp4"></video>
+                        <video class="video-card__reproductor" controls muted>
+                            <source src="./videos/Video Cinematográfico Floristería.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <div class="video-card">
-                        <video class="video-card__reproductor" controls muted><source src="./videos/video1.mp4" type="video/mp4"></video>
+                        <video class="video-card__reproductor" controls muted>
+                            <source src="./videos/video1.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
             </div>
@@ -424,7 +423,7 @@
             <div class="seccion__contenedor">
                 <h2 class="seccion__titulo">Síguenos en Instagram</h2>
                 <p class="seccion__descripcion">Descubre nuestro trabajo diario, promociones exclusivas y el detrás de cámaras de Jardín de Lulú.</p>
-                <a href="" class="instagram-link" target="_blank">@jardindelulu</a>
+                <a href="#" class="instagram-link" target="_blank">@jardindelulu</a>
             </div>
         </section>
     </main>
@@ -653,84 +652,3 @@ img {
 
 .sobre-lulu__imagen {
     flex: 1;
-    min-width: 280px;
-    border-radius: var(--borde);
-    overflow: hidden;
-    box-shadow: var(--sombra-fuerte);
-}
-
-.sobre-lulu__imagen img {
-    width: 100%;
-    height: auto;
-}
-
-.sobre-lulu__texto {
-    flex: 1;
-    min-width: 300px;
-}
-
-.sobre-lulu__titulo {
-    text-align: left;
-    margin-bottom: 24px;
-}
-
-.sobre-lulu__titulo::after {
-    margin-left: 0;
-    margin-right: auto;
-}
-
-.sobre-lulu__destacado {
-    font-family: var(--fuente-titulos);
-    font-style: italic;
-    font-size: 22px;
-    color: var(--color-salvia);
-    margin-bottom: 20px;
-}
-
-.sobre-lulu__texto p {
-    margin-bottom: 16px;
-}
-
-.sobre-lulu__sueno {
-    font-weight: 500;
-    color: var(--color-salvia);
-    border-left: 3px solid var(--color-salvia);
-    padding-left: 16px;
-    margin: 20px 0;
-}
-
-.sobre-lulu__firma {
-    font-family: var(--fuente-titulos);
-    font-style: italic;
-    font-size: 24px;
-    color: var(--color-salvia);
-    margin-top: 20px;
-}
-
-/* ========== CATÁLOGO ========== */
-.catalogo__cuadricula {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 32px;
-}
-
-.tarjeta {
-    background-color: var(--color-rosado);
-    border-radius: var(--borde);
-    overflow: hidden;
-    box-shadow: var(--sombra);
-    transition: all var(--transicion);
-}
-
-.tarjeta:hover {
-    transform: translateY(-6px);
-    box-shadow: var(--sombra-fuerte);
-}
-
-.tarjeta__imagen {
-    height: 260px;
-    overflow: hidden;
-    background-color: var(--color-fondo);
-}
-
-.tarjeta__imagen img {
