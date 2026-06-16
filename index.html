@@ -234,45 +234,27 @@
         </section>
 
     <!-- ========== VIDEOS ========== -->
-<section class="seccion videos" id="videos">
-    <div class="seccion__contenedor">
-        <h2 class="seccion__titulo">Videos</h2>
-        <p class="seccion__descripcion">
-            El arte floral en movimiento. Disfruta de nuestros procesos creativos.
-        </p>
-
-        <div class="videos__grid">
-            <!-- Video 1: CON AUDIO - VIDEO LOCAL -->
-            <div class="video-card">
-                <h3 class="video-card__titulo"> Proceso creativo (con audio)</h3>
-                <video class="video-card__reproductor" controls>
-                    <source src="videos/tu-video1.mp4" type="video/mp4">
-                    Tu navegador no soporta la reproducción de video.
-                </video>
-                <p class="video-card__nota">Este video incluye audio ambiente del taller.</p>
+ <!-- ========== VIDEOS (4 videos, 1 con audio) ========== -->
+        <section class="seccion" id="videos">
+            <div class="seccion__contenedor">
+                <h2 class="seccion__titulo">Detrás de los arreglos</h2>
+                <p class="seccion__descripcion">El arte floral en movimiento. Disfruta de nuestros procesos creativos.</p>
+                <div class="videos__cuadricula">
+                    <div class="video-card">
+                        <video class="video-card__reproductor" controls><source src="./videos/entrega.mp4" type="video/mp4"></video>
+                    </div>
+                    <div class="video-card">
+                        <video class="video-card__reproductor" controls muted><source src="./videos/primer beso.mp4" type="video/mp4"></video>
+                    </div>
+                    <div class="video-card">
+                        <video class="video-card__reproductor" controls muted><source src="./videos/Video Cinematográfico Floristería.mp4" type="video/mp4"></video>
+                    </div>
+                    <div class="video-card">
+                        <video class="video-card__reproductor" controls muted><source src="./videos/video1.mp4" type="video/mp4"></video>
+                    </div>
+                </div>
             </div>
-
-            <!-- Video 2: MUDO -->
-            <div class="video-card">
-                <h3 class="video-card__titulo"> Selección de flores (mudo)</h3>
-                <video class="video-card__reproductor" src="/videos/video1.mp4"></video>
-            </div>
-
-            <!-- Video 3: MUDO -->
-            <div class="video-card">
-                <h3 class="video-card__titulo"> Armado de ramos (mudo)</h3>
-                <video class="video-card__reproductor" src="https://cdn.coverr.co/videos/coverr-florist-preparing-a-bouquet-4394/1080p.mp4" controls muted preload="metadata"></video>
-            </div>
-
-            <!-- Video 4: MUDO -->
-            <div class="video-card">
-                <h3 class="video-card__titulo"> Entrega especial (mudo)</h3>
-                <video class="video-card__reproductor" src="https://cdn.coverr.co/videos/coverr-putting-flowers-into-a-vase-8036/1080p.mp4" controls muted preload="metadata"></video>
-            </div>
-        </div>
-    </div>
-</section>
-
+        </section>
     <footer class="footer">
         <p>&copy; 2026 Jardín de Lulú - Flores que cuentan historias</p>
     </footer>
